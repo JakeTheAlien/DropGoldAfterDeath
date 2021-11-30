@@ -11,7 +11,7 @@ namespace DropGoldAfterDeath
     {
         public void Awake()
         {
-            // Thanky you @Storm312 for showing me how this works.
+            // Thank you @Storm312 for showing me how this works.
             On.RoR2.GlobalEventManager.OnPlayerCharacterDeath += (orig, self, damageInfo, victim, victimNetworkUser) =>
             {
                 orig(self, damageInfo, victim, victimNetworkUser);
@@ -29,7 +29,7 @@ namespace DropGoldAfterDeath
                     uint money = component.master.money;
                     List<CharacterMaster> aliveLists = aliveList(component.master);
 
-                    // Return if there is no more alive player
+                    // Return if there is no more alive players
                     if (aliveLists.Count < 1)
                         return;
                     
@@ -37,7 +37,7 @@ namespace DropGoldAfterDeath
                     component.master.money = 0;
                     splitMoney(aliveLists, money);
 
-                    // Broadcast drop message<
+                    // Broadcast drop message
                     Chat.SendBroadcastChat(new Chat.SimpleChatMessage
                     {
                         baseToken = string.Format("<color=#e2b00b>{0} gold</color> has been dropped! " +

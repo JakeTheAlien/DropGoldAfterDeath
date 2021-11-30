@@ -1,6 +1,6 @@
 ## DropGoldAfterDeath - A Mod that drop player money after death and split them with alive player(s).
 
-When player die hes gold will got splited to alive people. Gold transfer automaticly without user action.
+When a player dies, his gold will be split between the alive players. Gold transfer happens automatically without user interaction.
 
 ![DropGoldAfterDeath Preview (V.0.1)](https://i.imgur.com/GGnIYqf.png)
 
@@ -10,7 +10,7 @@ When player die hes gold will got splited to alive people. Gold transfer automat
 1. Download latest version _(.DLL)_
 2. Drag and drop `DropGoldAfterDeath.DLL` to `./BepInEx/plugins` folder.
 
-Plugin works only in multiplay, server host has to have it installed at least.
+Plugin works only in multiplayer, server host has to have it installed at least.
 
 ###  Requirements
 - [bbepis-BepInExPack-1.3.1 or higher](https://thunderstore.io/package/bbepis/BepInExPack/)
